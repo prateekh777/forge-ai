@@ -1,0 +1,17 @@
+Files created by: Prateek (workstream-p) on 2026-03-22
+Owner: CK
+
+## What was done
+- [x] supabase/migrations/20260322000000_init.sql — full schema (9 tables, 5 enums, RLS, indexes, triggers)
+- [x] supabase/seed.sql — 3 test orders
+- [x] contracts/database.sql — source-of-truth copy of migration SQL
+- [x] contracts/enums.ts — all 5 enum types (TaskType, PaymentStatus, ExecutionStatus, DeliverableType, ImprovementType)
+- [x] contracts/types.ts — hand-authored Database type (placeholder)
+
+## Still needed from CK (owner)
+- [ ] Run `supabase start` (local instance)
+- [ ] Run `supabase db reset` — verify migrations + seed apply cleanly
+- [ ] Run `supabase gen types typescript --local > contracts/types.ts` — replace placeholder with generated output
+- [ ] Verify all 9 tables and 5 enums exist in Supabase Studio
+- [ ] Push migrations to remote: `supabase db push`
+- [ ] Apply env vars (SUPABASE_URL, keys) to Vercel + Railway

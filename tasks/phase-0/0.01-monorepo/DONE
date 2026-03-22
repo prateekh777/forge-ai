@@ -1,0 +1,24 @@
+Files created by: Prateek (workstream-p) on 2026-03-22
+Owner: Achyut
+
+## What was done
+- [x] Root package.json (Turborepo workspace, npm workspaces)
+- [x] turbo.json (build pipeline config)
+- [x] apps/web/package.json (Next.js 14, React 18, Supabase, Tailwind)
+- [x] apps/web/next.config.js
+- [x] apps/web/tsconfig.json (strict mode)
+- [x] apps/web/tailwind.config.ts
+- [x] apps/web/postcss.config.js
+- [x] apps/api/pyproject.toml (Python 3.12, FastAPI, all deps per TASK.md)
+- [x] apps/api/Dockerfile
+- [x] apps/api/src/main.py (minimal — /api/health endpoint only)
+- [x] packages/shared/package.json
+- [x] packages/shared/tsconfig.json
+- [x] .github/workflows/ci.yml
+
+## Still needed from Achyut (owner)
+- [ ] Run `supabase init` inside supabase/ to generate config.toml
+- [ ] Run `cd apps/api && poetry install` and verify it exits 0
+- [ ] Run `poetry run uvicorn src.main:app --reload` and verify health check responds
+- [ ] Run `npm install` from root and verify it exits 0
+- [ ] Note: apps/api/src/main.py is a stub — full scaffold is a1.01's job
