@@ -1,0 +1,5 @@
+export type TaskType = 'automation' | 'content' | 'agent' | 'integration' | 'data' | 'other'
+export type PaymentStatus = 'pending' | 'paid' | 'refunded' | 'failed'
+export type ExecutionStatus = 'queued' | 'classifying' | 'running' | 'qa_review' | 'delivered' | 'failed' | 'revision' | 'cancelled'
+export type DeliverableType = 'file' | 'url' | 'code_repo' | 'api_endpoint' | 'report' | 'other'
+export type ImprovementType = 'prompt_update' | 'flow_change' | 'new_step' | 'parameter_tune'

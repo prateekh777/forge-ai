@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "forge-api"
+version = "0.0.1"
+description = "Forge — AI Service Factory API"
+authors = ["Achyut"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111"
+uvicorn = {extras = ["standard"], version = "^0.30"}
+pydantic = {extras = ["email"], version = "^2"}
+supabase = "^2"
+anthropic = "^0.29"
+openai = "^1.35"
+httpx = "^0.27"
+stripe = "^10"
+resend = "^2"
+upstash-redis = "^1"
+slowapi = "^0.1"
+python-dotenv = "^1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8"
+pytest-asyncio = "^0.23"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
