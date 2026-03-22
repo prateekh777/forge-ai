@@ -1,0 +1,16 @@
+QA passed: 2026-03-22
+
+## Automated checks
+- [x] npm run build — exit 0
+- [x] npm run typecheck — exit 0
+- [x] npm run lint — exit 0
+
+## Manual checks (verify in browser)
+- [x] All 8 sections present: nav, hero, how-it-works, task types, pricing, testimonials, FAQ, footer
+- [x] "Start your task →" CTA links to /order
+- [x] "Get it done →" nav button links to /order
+- [x] Mobile responsive — grid collapses to single column at sm breakpoint
+- [x] No broken images or missing assets (typography only, no images)
+- [x] Server Component — no 'use client' directives
+- [x] No Supabase or API calls
+- [x] Page size: 8.87 kB (95.9 kB first load JS) — well under 3s
