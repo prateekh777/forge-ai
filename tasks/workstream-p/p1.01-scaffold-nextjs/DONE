@@ -1,0 +1,26 @@
+QA passed: 2026-03-22
+
+## Automated checks
+
+### 1. Build
+- [x] npm run build — exit 0
+- [x] npm run typecheck — exit 0
+- [x] npm run lint — exit 0 (no warnings or errors)
+
+### 2. Supabase connection
+- [x] Server client uses @supabase/ssr createServerClient
+- [x] Browser client uses @supabase/ssr createBrowserClient
+- [x] Database type imported from contracts/types.ts — not redefined locally
+
+### 3. Middleware
+- [x] Protects /dashboard and /admin — redirects to / if no user
+- [x] Public routes pass through
+
+### 4. shadcn/ui
+- [x] components.json exists (style: default, baseColor: neutral, cssVariables: true)
+- [x] button, input, label, textarea, card, badge installed to src/components/ui/
+- [x] Button renders on placeholder page.tsx
+
+### 5. Layout
+- [x] layout.tsx with Inter font, metadata title "Forge — AI Service Factory"
+- [x] page.tsx placeholder with <h1>Forge</h1> and Button component
